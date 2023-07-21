@@ -1,0 +1,124 @@
+<!-- Site internet qui présente les événements et sujets concernant les thèmes du Bio et de l'environnement -->
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" lang="fr"/>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evenements Bio Bien Bon</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="titre_asso" id="haut_page_evenements">Association Bio Bien Bon</h1>
+    </header>
+    <main>
+      <nav>
+        <ul>
+          <li><a href="./index.html" alt="bio-bien-bon">Accueil</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h1>Les évenements présentés par Bio Bien Bon</h1>
+          <p>
+            Vous trouverez toutes rencontres concernant le Bio : aussi bien l'agenda des salons, foires, conférences, festival et plus encore !!
+          </p>
+          <p>
+            Vous trouverez la liste des événements par région...uniquement en France métropolitaine pour le moment...<br />
+            Bientôt...dans les territoires ultra-marins de la France, lorsque nous aurons nos collaborateurs directement sur place.<br />
+            Et pourquoi pas des ambassadeurs dans le monde ??!!
+          </p>
+          
+          <h2>Sommaire agenda des sorties</h2>
+            <div id="agenda">
+              <ul>
+                <li><a href="#salon-festival">Salon et festival</a></li>
+                <li><a href="#conférence">Conférence</a></li>
+                <li><a href="#lieu-partage">Lieu de partage</a></li>
+              </ul>
+            </div>
+
+            <h2>Salon et festival</h2>
+            <p>
+              <a href="#agenda">Retour sommaire agenda</a>
+            </p>  
+              <div id="salon-festival">
+                <ul>
+                  <li><a href="url">Occitanie</a> </li>
+                </ul>
+                <p>
+                  <!-- Formats : MOV, MP4, AVI, MPEG-4 -->
+                  Regardez cette vidéo de rencontre Bio dans le département du Tarn
+                  <video width="320" height="240" autoplay controls>
+                    <source src="video.mp4" type="video/mp4">
+                    <source src="video.ogg" type="video/ogg">
+                    <source src="video.webm" type="video/webm">
+                    Message à afficher en cas de non support de la balise par le navigateur.
+                  </video>
+                </p>
+                <p>
+                  Ecoutez cette chanson traditionnelle Occitanie
+                  <audio controls>
+                    <source src="music.ogg" type="audio/ogg">
+                    <source src="music.wav" type="audio/wav">
+                    <source src="music.mp3" type="audio/mpeg">
+                    Le navigateur ne prend pas en charge ce format audio.
+                  </audio>
+                </p>
+              </div>
+              
+           
+            <h2>Conférence</h2>  
+            <p>
+              <a href="#agenda">Retour sommaire agenda</a>
+            </p>  
+              <div id="conférence">
+                <ul>
+                  <li><a href="url">Occitanie</a> </li>
+                </ul>
+              </div>
+
+            <h2>Lieu de partage</h2>
+              <p>
+                <a href="#agenda">Retour sommaire agenda</a>
+              </p>  
+              <div id="lieu-partage">
+                <ul>
+                  <li><a href="url">Occitanie</a> </li>
+                </ul>
+              </div>
+            </div>   
+      </div>
+    </main>
+
+      <!-- Encart aside : galerie des images des événements -->
+      <aside class="galerie">
+        <section class="section-galerie">
+          <ul class="list-menu-galerie">
+            <li class="list-menu-galerie-item">
+              <img src="./img/1-information-bio-occitanie.png" alt="occitanie-bio-video" class="galerie-information" title="occitanie-bio"/>
+            </li>
+            <li class="list-menu-galerie-item">
+              <img src="./img/2-information-bio-occitanie.png" alt="occitanie-information" class="galerie-information" title="occitanie-information"/>
+            </li>
+          </ul>
+        </section>
+      </aside>
+
+    <footer>
+      <h4 id="contact">Contact</h4>  
+        <p>Bio Bien Bon</p> 
+        <nav role="navigation">
+          <ul>
+            <li class="inline"><a href="tel:+33600000000">06 00 00 00 00</a></li>
+            <li class="inline"><a href="mailto:bio_bien_bon@example.com">bio_bien_bon@example.com</a></li>
+            <li class="inline"><a href="#haut_page_evenements" class="retour_accueil_haut_page">Haut de page</a></li>
+           </ul>
+        </nav>
+        <p class="droits">
+          Tous droits réservés
+        </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

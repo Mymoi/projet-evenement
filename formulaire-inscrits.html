@@ -1,0 +1,132 @@
+<!-- Site internet qui présente les événements et sujets concernant les thèmes du Bio et de l'environnement -->
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" lang="fr"/>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire-connexion-BioBienBon</title>
+  </head>
+
+  <!-- Corps de la page -->
+  <body>
+    <header>
+      <h1 class="titre_asso" id="haut_page_formulaire_connexion">Formulaire client</h1>
+    </header>
+    <main>
+      <nav>
+        <ul>
+          <li><a href="./index.html" alt="bio-bien-bon">Accueil</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    <!-- Partie main : formulaire -->
+  <main class="main-form">
+    <section class="head-customer-form">
+      <h1 class="h1-form">Connectez-vous !</h1>
+    </section>
+
+    <section class="customer-form">
+      <h2 class="h2-form">Vous êtes déjà enregistré :</h2>
+      <p>Vous pouvez directement vous connecter avec vos identifiants</p>
+        
+      <form method="POST" action="action.php" id="connexion-custom-form">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="email@email" checked required>
+        </div>
+      
+        <div class="input-group">
+          <label for="name">Mot de passe</label>
+          <input type="password" name="password" id="password" placeholder="Mot de passe" checked required>
+        </div>
+
+        <div class="input-action">
+          <!-- <button class="send-button" id="bt-sign-in" type="submit">Se connecter</button> -->
+          <input type="submit" value="Se connecter"  class="button-form" id="bt-sign-up">
+        </div>
+      </form>
+    </section>
+      
+      
+    <section class="new-customer-form">
+      <h2 class="h2-form">Pour vous enregistrer :</h2>
+      <p>Merci de remplir de ce formulaire pour recevoir notre agenda des manifestations</p>
+       
+      <form method="POST" action="action.php" id="register-custom-form">
+        <div class="input-group">
+          <label for="name">Nom</label>
+          <input type="text" name="name" id="name" placeholder="Votre nom" checked required>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="email@email" checked required>
+        </div>
+      
+        <div class="input-group">
+          <label for="name">Mot de passe</label>
+          <input type="password" name="password" id="password" placeholder="Mot de passe" checked required>
+        </div>
+        
+        <div class="input-group">
+          <label for="birthDate">Date de naissance<br></label>
+          <input type="date" name="birthDate" id="birthDate" placeholder="Votre date de naissance" checked>
+        </div>
+
+        <div class="input-group">
+          <label for="comment">Message<br></label>
+          <textarea rows="4" name="comment" id="comment" placeholder="Saisissez votre commentaire"></textarea>
+        </div>
+      
+        <p>Votre civilité :</p>
+        <div class="input-group">
+          <label for="opt-female">Mme.</label>
+          <input type="radio" id="female" name="butt-radio-female">
+          
+          <label for="opt-male">M.</label>
+          <input type="radio" id="male" name="butt-radio-male">
+        </div>
+
+        
+      <hr>
+      <p>Cochez la case pour valider le formulaire :</p>
+      <div class="input-group">
+      <label for="cgv">
+        <input type="checkbox" id="cgv" name="cgv">
+        J'accepte les conditions générales
+      </label>
+      </div>
+      
+      <div class="input-action">
+        <!-- <button class="send-button" id="submit" type="submit">Créer votre compte client</button> -->
+        <input type="submit" value="Créer votre compte client"  class="button-form" id="bt-sign-up">
+
+        <!-- <button class="send-button" id="submit" type="submit">Vider le formulaire</button> -->
+        <input type="reset" value="Tout effacer" class="button-form" id="bt-reset">
+      </div>
+      </section>
+    </form>
+  </main>
+
+
+    <!---------------------------------Pied de page ------------------------------->
+
+    <footer>
+      <h4 id="contact">Contact</h4>  
+        <p>Bio Bien Bon</p> 
+        <nav role="navigation">
+          <ul>
+            <li class="inline"><a href="tel:+33600000000">06 00 00 00 00</a></li>
+            <li class="inline"><a href="mailto:bio_bien_bon@example.com">bio_bien_bon@example.com</a></li>
+            <li class="inline"><a href="#haut_page" class="retour_accueil_haut_page">Haut de page</a></li>
+           </ul>
+        </nav>
+        <p class="droits">
+          Tous droits réservés
+        </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

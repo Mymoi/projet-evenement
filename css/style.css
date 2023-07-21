@@ -1,0 +1,106 @@
+/* bloc de couleur bleue sur mobile et + */ 
+/* h1 { */
+body {
+  background-color: rgb(223, 215, 241);
+}
+/* bloc de couleur rouge à partir de 640px */
+@media screen and (min-width: 640px) {
+/* h1 { */
+body {
+  background-color: rgb(95, 240, 155);
+    }   
+}
+/* bloc de couleur verte à partir de 800px */
+@media screen and (min-width: 800px) {
+/* h1 { */
+body {
+  background-color: rgb(145, 243, 65);
+    }   
+}
+
+/* titre de la page formatée */
+h1 {
+    display: block;
+    height: 100px;
+    line-height: 80px;
+    text-align: center;
+    color: rgb(215, 240, 204);
+    text-decoration: dotted;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-style: oblique;
+    font-weight: bolder;
+    border: solid rgb(173, 243, 116);
+    background-color: rgb(49, 212, 35);
+    word-wrap: normal;
+} 
+main {
+    display: inline-block;
+    width: 75%;
+    vertical-align: top;
+    margin: 2px;
+    /*border: 4px solid rgba(14, 10, 233, 0.966);*/
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+aside {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    text-align: left;
+    background-color: rgb(200, 245, 145);
+    border: 4px solid rgba(147, 45, 243, 0.966);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+/* pied de page avec une navigation formatée */
+footer{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: rgb(29, 7, 125);
+    text-decoration-color: underline;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 0.8rem;
+    font-style: oblique;
+    font-weight: bolder;
+    border: solid rgb(173, 243, 116);
+    background-color: rgb(35, 100, 212);
+}
+h4{
+  letter-spacing: 3px;
+  font-size: 2em;
+}
+.inline {
+    display:inline-block;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    background-color: aquamarine;
+    border: 2px solid red;
+}
+.droits{
+    text-align: center;
+}
+a:hover{
+    text-decoration: underline;
+    font-weight: bold ;
+    color: #056371;
+}
+p:active{
+    background-color: rgba (0, 255, 85, 0.15) ;
+    color: rgb(17, 14, 206);
+}
+.intro_bienvenue{
+  color: rgb(67, 7, 122);
+  font-style: italic;
+  font-size: 2vw;
+  word-wrap: normal;
+}
+h2::before{
+    content: "\21B3 \0020";
+}
+.retour_accueil_haut_page::after{
+  content: "\0020 \2302";
+}
